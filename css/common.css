@@ -102,6 +102,12 @@ em {
 .hide {
   display: none;
 }
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
 .lz-container {
   position: absolute;
   width: 100%;
@@ -124,7 +130,9 @@ em {
 }
 #page1 .yg-name {
   position: absolute;
+  top: 50%;
   width: 100%;
+  margin-top: -.91rem;
   color: #fff;
   text-align: center;
 }
@@ -157,6 +165,7 @@ em {
 }
 #page1 .yg-name .ytext {
   height: .24rem;
+  margin-top: .3rem;
   overflow: hidden;
 }
 #page1 .ytext .fonts {
@@ -164,12 +173,121 @@ em {
   width: .26rem;
   height: .24rem;
   overflow: hidden;
-  background: url(img/yg_screen1_type.png) no-repeat;
+  background: url(../img/yg_screen1_type.png) no-repeat;
+  background-size: cover;
 }
 #page1 .ytext .zhuan {
-  background-position: -0px -0px;
+  background-position: 8px -0px;
+}
+#page1 .ytext .zhu {
+  background-position: -20px -0px;
+}
+#page1 .ytext .fu {
+  background-position: -48px -0px;
+}
+#page1 .ytext .wu {
+  background-position: -78px -0px;
+}
+#page1 .ytext .xiao {
+  background-position: -104px -0px;
+}
+#page1 .ytext .wei {
+  background-position: -130px -0px;
+}
+#page1 .ytext .qi {
+  background-position: -156px -0px;
+}
+#page1 .ytext .ye {
+  background-position: -184px -0px;
 }
 #page2 {
+}
+#page2 .yg-develop {
+  position: absolute;
+  width: 100%;
+  color: #fff;
+}
+#page2 .yg-develop .develop-xk {
+  width: 100%;
+  padding: .3rem 0 0 .3rem;
+}
+#page2 .xk-text {
+  position: absolute;
+  top: .68rem;
+  left: .85rem;
+  display: inline-block;
+}
+#page2 .xk-text .xk-chinese {
+  color: #e1c632;
+  font-size: 1.2em;
+}
+#page2 .xk-text .xk-english {
+  font-size: .65em;
+}
+#page2 .yg-develop .yg-story {
+  position: absolute;
+  top: .9rem;
+  width: 100%;
+  padding-top: .5rem;
+  background: url(../img/yg_screen2_line.png) no-repeat center center;
+}
+#page2 .story .circle {
+  margin: 0 auto;
+  background: #e1c632;
+}
+#page2 .circle.smaller {
+  width: .15rem;
+  height: .15rem;
+  border-radius: 50%;
+}
+#page2 .circle.small {
+  width: .20rem;
+  height: .20rem;
+  border-radius: 50%;
+}
+#page2 .circle.big {
+  width: .25rem;
+  height: .25rem;
+  border-radius: 50%;
+}
+#page2 .circle.biger {
+  width: .30rem;
+  height: .30rem;
+  border-radius: 50%;
+}
+#page2 .story-one {
+  height: .75rem;
+}
+#page2 .story-two {
+  height: .80rem;
+}
+#page2 .story-three {
+  height: 1.35rem;
+}
+#page2 .story-one .story-text {
+    position: relative;
+    top: -.15rem;
+    font-size: .8em;
+}
+#page2 .story-two .story-text {
+    position: relative;
+    top: -.20rem;
+    float: left;
+    font-size: .9em;
+}
+#page2 .story-three .story-text {
+    position: relative;
+    top: -.25rem;
+    font-size: 1em;
+}
+#page2 .yg-develop .story-time {
+  font-size: 1.1em;
+  color: #e1c632;
+}
+.future {
+  font-size: 1.4em;
+  color: #e1c632;
+  text-align: center;
 }
 #page3 {
 }
@@ -185,14 +303,27 @@ em {
     color: white;
 }
 @media (device-height:480px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone4/4s */
-
+  #page2 .xk-text {
+    position: absolute;
+    top: .60rem;
+    left: .65rem;
+  }
 }
 @media (device-height:568px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone5 */ 
-
+  #page2 .xk-text {
+    position: absolute;
+    top: .60rem;
+    left: .65rem;
+  }
 }
 @media (device-height:667px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone6 */
 
 }
 @media (device-height:736px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone6 Plus */
-
+  #page2 .xk-text {
+    position: absolute;
+    top: .75rem;
+    left: 1rem;
+    
+  }
 }
