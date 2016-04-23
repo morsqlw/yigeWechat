@@ -181,6 +181,9 @@ em {
 }
 #page7 {
 }
+.hi {
+    color: white;
+}
 @media (device-height:480px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone4/4s */
 
 }
