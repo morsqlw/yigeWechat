@@ -14,9 +14,9 @@
 	
 	<section class="main-cont">
 		<div class="container">
-			<div class="lz-container">
-				<div class="lz-scroll">
-					<div class="lz-panel hide" id="page1">
+			<div class="lz-container" id="J-container">
+				<div class="lz-scroll" id="J_content">
+					<div class="lz-panel" id="page1" data-screen="4">
 						<div class="yg-name">
 							<div class="yg-logo">
 								<img src="img/yg_logo.png" width="66">
@@ -46,7 +46,7 @@
 							<span class="arrow-bt"></span>
 						</div>
 					</div>
-					<div class="lz-panel hide" id="page2">
+					<div class="lz-panel" id="page2" data-screen="4">
 						<div class="yg-develop">
 							<div class="develop-xk">
 								<img src="img/yg_screen2_xk.png" />
@@ -110,7 +110,7 @@
 							<span class="arrow-bt"></span>
 						</div>
 					</div>
-										<div class="lz-panel hide" id="page3">
+					<div class="lz-panel" id="page3" data-screen="4">
 						<div class="">
 							<div class="shine-dot">
 								<span class="dot-1"></span>
@@ -161,7 +161,7 @@
 								</div>
 								<div class="caption">
 									<div class="cap-text">
-										<p>职位服务</p>
+										<p>只为服务</p>
 										<p class="cap-text-en">ONLY FOR SERVICE</p>
 									</div>
 									<div class="cap-info-box">
@@ -177,7 +177,7 @@
 							<span class="arrow-bt"></span>
 						</div>
 					</div>
-					<div class="lz-panel" id="page4">
+					<div class="lz-panel" id="page4" data-screen="4">
 						<div class="yg-content">
 							<div class="yg-top">
 								<span class="design-l"></span>
@@ -227,19 +227,61 @@
 							<span class="arrow-bt"></span>
 						</div>
 					</div>
-					<div class="lz-panel hide" id="page4"></div>
-					<div class="lz-panel hide" id="page5"></div>
-					<div class="lz-panel hide" id="page6"></div>
-					<div class="lz-panel hide" id="page7"></div>
-					<div class="lz-panel hide" id="page8"></div>
+					<div class="lz-panel hide" id="page5" data-screen="4"></div>
+					<div class="lz-panel hide" id="page6" data-screen="1">
+						<div class="yg-top">
+							<div class="yg-top-text">
+								<span class="text-zh">联系我们</span>
+								<span class="text-en">CONTACT US</span>
+							</div>
+						</div>
+						<div class="yg-md">
+							<div class="yg-info">
+								<p><span>公司地址：</span>杭州市余杭区五常西溪软件园B幢4层西</p>
+								<p><span>邮政编码：</span>311100</p>
+								<p><span>联系电话：</span>13758279884</p>
+								<p><span>公司邮箱：</span>wqr@eage.me</p>
+							</div>
+							<div class="yg-pro">
+								<p class="text">专业与专注的态度、创新与精益求精的精神</p>
+								<p class="mask">值得你的信赖</p>
+							</div>
+						</div>
+						<div class="yg-footer">
+							<div class="yg-cop">
+								合作品牌
+							</div>
+							<div class="yg-f-line"></div>
+							<div class="yg-case">
+								<div class="case-icon"><img src="img/yg_screen6_qq.png" max-width="100%"></div>
+								<div class="case-icon"><img src="img/yg_screen6_baidu.png" max-width="100%"></div>
+								<div class="case-icon"><img src="img/yg_screen6_aliyun.png" max-width="100%"></div>
+								<div class="case-icon"><img src="img/yg_screen6_alibaba.png" max-width="100%"></div>
+								<div class="case-icon"><img src="img/yg_screen6_zhiyu.png" max-width="100%"></div>
+								<div class="case-icon"><img src="img/yg_screen6_lvyue.png" max-width="100%"></div>
+							</div>
+						</div>
+						<div class="yg-bottom">
+							<span class="arrow-bt"></span>
+						</div>
+					</div>
+					<div class="lz-panel hide" id="page7" data-screen="4"></div>
 				</div>
 			</div>
 		</div>
 	</section>
 	<script type="text/javascript" src="script/lib/zepto.min.js"></script>
+	<script type="text/javascript" src="script/zepto.pageSlider.js"></script>
 	<script type="text/javascript" src="script/index.js"></script>
 	<script type="text/javascript">
-	
+		Zepto(function($){
+	    var $container = $(".main-cont");
+	    $container.pageSlider({
+	    	pageSelector: '.lz-panel',
+	        loop:false,
+	        easingTime:600
+	    });
+	});
 	</script>
 	</body>
 </html>
