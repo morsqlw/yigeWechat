@@ -586,6 +586,133 @@ em {
 #page4 .yg-f-text > p {
   line-height: 1.8;
 }
+
+
+
+
+#page5 .swiper-slide{
+    width:100%;
+}
+#page5 .yg-content{
+    width:100%;
+    position:absolute;
+    top:80px;
+    left:0%;
+}
+
+#page5 .swiper-jinggong .yg-pic{
+    overflow: hidden;
+    height:350px;
+}
+#page5 .yg-pic{
+    overflow: hidden;
+    height:400px;
+}
+#page5 .swiper-jinggong .yg-pic{
+    background-image:url(../img/yg_screen5_jinggong.png);
+    background-size:80%;
+    background-repeat:no-repeat;
+    background-position:50% 0%;
+}
+#page5 .swiper-lvyue .yg-pic{
+    background-image:url(../img/yg_screen5_lvyue.png);
+    background-size:60%;
+    background-repeat:no-repeat;
+    background-position:50% 0%;
+}
+#page5 .swiper-tiaoban .yg-pic{
+    background-image:url(../img/yg_screen5_tiaoban.png);
+    background-size:60%;
+    background-repeat:no-repeat;
+    background-position:50% 0%;
+}
+#page5 .swiper-lantin .yg-pic{
+    background-image:url(../img/yg_screen5_lantin.png);
+    background-size:60%;
+    background-repeat:no-repeat;
+    background-position:50% 0%;
+}
+
+#page5 .yg-intro{
+position:absolute;
+    bottom:100px;
+    left:50%;
+    z-index:500;
+    width:300px;
+    margin-top:50px;
+    margin-left:-150px;
+
+}
+#page5 .yg-intro-title1{
+    color:#dcb307;
+    font-size:24px;
+}
+#page5 .yg-intro-title2{
+    color:#dcb307;
+    font-size:14px;
+}
+#page5 .yg-intro-line{
+    width:100%;
+    height:2px;
+    background-color:#dcb307;
+}
+#page5 .yg-intro-ul{
+    text-align:center;
+    overflow: hidden;
+    margin-left:40px;
+}
+#page5 .yg-intro-ul li{
+    display: inline;
+    width:120px;
+    text-align:left;
+    float:left;
+    margin:3px;
+    height:auto;
+}
+#page5 .yg-intro-ul .circle{
+    display: inline-block;
+    float:left;
+    height:10px;
+    width:10px;
+    border-radius: 10px;
+    background-color:#dcb307;
+    position:relative;
+    top:5px;
+    margin-right:5px;
+}
+#page5 .yg-intro-ul .yg-intro-word{
+    color:#dcb307;
+    font-size:14px;
+}
+#page5 .swiper-lvyue .yg-intro{
+    bottom:7%;
+}
+#page5 .swiper-tiaoban .yg-intro{
+    bottom:7%;
+}
+#page5 .swiper-lantin .yg-intro{
+    bottom:10%;
+}
+#page5 .yg-intro-content1{
+    font-size:12px;
+    color:#dcb307;
+}
+#page5 .yg-intro-content2{
+    font-size:16px;
+    color:#dcb307;
+}
+#page5 .yg-intro-content3{
+    font-size:12px;
+    color:#dcb307;
+}
+
+
+
+
+
+
+
+
 #page6 {
   color: #dcb307;
 }
